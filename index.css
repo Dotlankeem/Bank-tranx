@@ -1,0 +1,97 @@
+body {
+  background-image: linear-gradient(rgb(0,0,0,0.8), rgb(0,0,0,0.8)), url('people.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#container {
+  text-align: center;
+  margin: 7%;
+  padding: 90px;
+}
+#Welcome {
+  color: wheat;
+  font-size: 80x; 
+}
+marquee {
+  color: red;
+  font-style: oblique;
+  transition: 0.8s ease-in-out;
+  padding: 10px;
+  /* color: transparent; */
+  color: aqua;
+}
+marquee:hover {
+  border-radius: 20px;
+  color: red;
+  background-color: aqua;
+  /* display: none; */
+  padding-bottom: 90px;
+  padding: 20px;
+  transform: 0.9s ease-in-out;
+  text-decoration: dashed;
+
+}
+label {
+  color: aqua;
+}
+p::first-letter {
+  font-size: 150%;
+}
+
+
+button:hover {
+  color: white;
+  background-color: red;
+  border: none;
+  padding: 5px 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  transform: 0.5s ease-in-out;
+  box-shadow: 0 0 15px purple;
+  cursor: pointer;
+}
+#thank {
+  color: white;
+  font-size: 20px;
+}
+.bank {
+  color: rgba(223, 191, 108, 0.809);
+}
+button {
+  padding: 3px 18px;
+  box-shadow: 0 0 15px gold;
+  transition: 0.9s ease;
+  border-radius: 20px;
+  border: none;
+}
+.span {
+  color: aqua;
+  font-size: 70px;
+  box-shadow: 0 10 10 10  px;
+}
+#pin {
+  box-shadow: 0 0 8px aqua;
+  color: aqua;
+  border: 1px solid aqua;
+  border-radius: 7px;
+  padding: 10px;
+  width: 250px;
+  outline: none;
+  transition:2s ease;
+}
+#output {
+  color: aqua;
+  text-shadow: 20px;
+  border-radius: 50px;
+  text-align: center;
+}
+#pin:hover{
+  width: 40%;
+  box-shadow: 0 0 10px darkturquoise;
+  transform: 0.5s ease-in-out;
+}
+::placeholder {
+  color: blue;
+  outline: none;
+  font-size: 20px;
+}
