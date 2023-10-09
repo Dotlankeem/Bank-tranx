@@ -2,7 +2,7 @@ const pinInput = document.getElementById('pin');
 const submitButton = document.getElementById('submit');
 const outputDiv = document.getElementById('output');
 
-const correctPin = '000000';
+const correctPin = '0000';
 let balance = 100000; 
 
 function displayBalance() {
