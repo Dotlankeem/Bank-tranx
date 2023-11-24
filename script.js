@@ -13,13 +13,12 @@ function displayBalance() {
 submitButton.addEventListener('click', function () {
     const enteredPin = pinInput.value;
 
-    if (enteredPin === correctPin) {
+    if (enteredPin === correctPin && enteredPin.length <= 4) {
 
         displayBalance();
-
         outputDiv.innerHTML += '<br><label for="withdrawAmount">Enter Withdrawal Amount:</label>';
         outputDiv.innerHTML += '<input type="number" id="withdrawAmount" placeholder="Amount">';
-        outputDiv.innerHTML += '<button id="withdraw">Withdraw</button>';
+        outputDiv.innerHTML += '<br><br><button id="withdraw">Withdraw</button>';
 
 
         const withdrawAmountInput = document.getElementById('withdrawAmount');
@@ -32,10 +31,10 @@ submitButton.addEventListener('click', function () {
             if (amount <= balance) {
                 balance -= amount;
                 displayBalance();
-                outputDiv.innerHTML += `<br>Withdrawal of $${amount} successful.`;
+                outputDiv.innerHTML += `<br>Withdrawal of $${amount} successful. Thanks For Banking With Us.`;
             } else {
 
-                outputDiv.innerHTML += '<br>Insufficient funds. Please enter a valid amount.';
+                outputDiv.innerHTML += '<br> Please enter a valid amount.';
             }
 
     
@@ -46,5 +45,7 @@ submitButton.addEventListener('click', function () {
         outputDiv.innerHTML = 'Incorrect PIN. Please try again.';
     }
 
-    pinInput.value = '';
+   
+
+    pinInput.value = error + 'pin';
 });

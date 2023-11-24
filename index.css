@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(rgb(0,0,0,0.8), rgb(0,0,0,0.8)), url('people.jpg');
+  background-image:  url('cart.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -9,22 +9,19 @@ body {
   padding: 90px;
 }
 #Welcome {
-  color: wheat;
-  font-size: 80x; 
+  color: solid black;
 }
 marquee {
   color: red;
   font-style: oblique;
   transition: 0.8s ease-in-out;
   padding: 10px;
-  /* color: transparent; */
-  color: aqua;
+  color: solid black;
 }
 marquee:hover {
   border-radius: 20px;
   color: red;
-  background-color: aqua;
-  /* display: none; */
+  background-color: gray;
   padding-bottom: 90px;
   padding: 20px;
   transform: 0.9s ease-in-out;
@@ -32,15 +29,12 @@ marquee:hover {
 
 }
 label {
-  color: aqua;
-}
-p::first-letter {
-  font-size: 150%;
+  color: blueviolet;
 }
 
 
 button:hover {
-  color: white;
+  color: whitesmoke;
   background-color: red;
   border: none;
   padding: 5px 20px;
@@ -51,7 +45,7 @@ button:hover {
   cursor: pointer;
 }
 #thank {
-  color: white;
+  color: blue;
   font-size: 20px;
 }
 .bank {
@@ -65,7 +59,7 @@ button {
   border: none;
 }
 .span {
-  color: aqua;
+  color: blue;
   font-size: 70px;
   box-shadow: 0 10 10 10  px;
 }
@@ -94,4 +88,26 @@ button {
   color: blue;
   outline: none;
   font-size: 20px;
+}
+
+@media(max-width:600px) {
+  #container {
+    padding: 0%;
+    height: 100vh;
+
+  }
+#Welcome {
+  color: wheat;
+  font-size: 10x; 
+}
+
+.span {
+  color: aqua;
+  font-size: 35px;
+  box-shadow: 0 10 10 10  px;
+}
+
+  #pin {
+    width: 100%;
+  }
 }
